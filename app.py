@@ -70,7 +70,7 @@ except Exception as e:
     print(f"Font configuration warning: {e}")
 
 # 初始化 Flask 应用
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 app.secret_key = 'your-secret-key-here-change-in-production'
 
 ### 数据库连接函数
